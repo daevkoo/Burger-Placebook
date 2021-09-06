@@ -2,8 +2,6 @@
 
 namespace BurgerBackend.Models
 {
-    // Models returned by AccountController actions.
-
     public class BurgerPlace
     {
         public ulong m_ID_u64 { get; set; }
