@@ -7,6 +7,11 @@ namespace BurgerBackend.DB
     {
         public BBDBContext() { }
 
+        public static BBDBContext Create()
+        {
+            return new BBDBContext();
+        }
+
         public DbSet<BurgerPlace> BurgerPlaces { get; set; }
         public DbSet<ReviewScore> Reviews { get; set; }
         public DbSet<Picture> Pictures { get; set; }
